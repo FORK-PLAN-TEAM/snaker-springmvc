@@ -93,16 +93,6 @@ public class ProcessController {
 	}
 	
 	/**
-	 * 新建流程定义
-	 * @param model
-	 * @return
-	 */
-	@RequestMapping(value = "add", method=RequestMethod.GET)
-	public String processAdd(Model model) {
-		return "snaker/processAdd";
-	}
-	
-	/**
 	 * 新建流程定义[web流程设计器]
 	 * @param model
 	 * @return

@@ -65,7 +65,7 @@ public class SurrogateController {
 	}
 	
 	@RequestMapping(value = "update", method = RequestMethod.POST)
-	public String update(Surrogate surrogate, Long parentMenuId) {
+	public String update(Surrogate surrogate) {
 		surrogate.setSdate(surrogate.getSdate() + " 00:00:00");
 		surrogate.setEdate(surrogate.getEdate() + " 23:59:59");
 		facets.addSurrogate(surrogate);
