@@ -221,12 +221,12 @@
             if (!designer.config.editable) {
                 designer.util.tip(_rect, _o.props['name'].value);
             } else {
-                var returnValue = window.showModalDialog(designer.config.ctxPath + '/config/form?lookup=1',window,'dialogWidth:1000px;dialogHeight:600px');
+/*                var returnValue = window.showModalDialog(designer.config.ctxPath + '/config/form?lookup=1',window,'dialogWidth:1000px;dialogHeight:600px');
                 if(returnValue) {
                     var formPath = "/config/form/use/" + returnValue;
                     _o.props.form.value = formPath;
                     document.getElementById("pform").innerHTML = '<input style="width:98%;" value="' + formPath + '"/>';
-                }
+                }*/
             }
         });
         _rect.click(function(){
@@ -236,12 +236,12 @@
         });
         _rect.dblclick(function(){
             if (designer.config.editable) {
-                var returnValue = window.showModalDialog(designer.config.ctxPath + '/config/form?lookup=1',window,'dialogWidth:1000px;dialogHeight:600px');
+/*                var returnValue = window.showModalDialog(designer.config.ctxPath + '/config/form?lookup=1',window,'dialogWidth:1000px;dialogHeight:600px');
                 if(returnValue) {
                     var formPath = "/config/form/use/" + returnValue;
                     _o.props.form.value = formPath;
                     document.getElementById("pform").innerHTML = '<input style="width:98%;" value="' + formPath + '"/>';
-                }
+                }*/
             }
         });
         _img.drag(function(dx, dy) {
